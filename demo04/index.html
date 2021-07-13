@@ -11,10 +11,16 @@
 <body>
     <div id="example"></div>
     <script type="text/babel">
+        class HelloMessage extends React.Component {
+            render() {
+                return <h1>Hello {this.props.name}</h1>
+            }
+        }
         ReactDOM.render(
-            <h1>Hello world</h1>,
+            <HelloMessage name="tt" />,
             document.getElementById('example')
         );
+
     </script>
 </body>
 
